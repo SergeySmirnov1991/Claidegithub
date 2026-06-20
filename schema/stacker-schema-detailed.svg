@@ -1,0 +1,323 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="1240" viewBox="0 0 1760 1240" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="1760" height="1240" fill="#ffffff"/>
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/></marker></defs>
+<text x="880.0" y="38" font-size="22" text-anchor="middle" fill="#1a1a1a" font-weight="bold" font-style="normal">Одноколонный штабелёр (межэтажный подъёмник) производственного здания</text>
+<text x="880.0" y="60" font-size="14" text-anchor="middle" fill="#555" font-weight="normal" font-style="normal">Паллеты 1000×1200 мм · грузоподъёмность 2000 кг · перемещение между 5 этажами</text>
+<text x="880.0" y="78" font-size="12" text-anchor="middle" fill="#888" font-weight="normal" font-style="normal">Функциональная схема приводов, датчиков и устройств безопасности (доработанная, детализированная)</text>
+<rect x="643.0" y="120" width="34" height="865" rx="0" fill="#f3f3f3" stroke="#1a1a1a" stroke-width="2"/>
+<text x="660" y="1003" font-size="11" text-anchor="middle" fill="#888" font-weight="normal" font-style="normal">Мачта (одна колонна, без горизонт. перемещения)</text>
+<line x1="420" y1="250" x2="1370" y2="250" stroke="#888" stroke-width="1" stroke-dasharray="8 6"/>
+<text x="395" y="244" font-size="14" text-anchor="end" fill="#1a1a1a" font-weight="bold" font-style="normal">5 этаж</text>
+<line x1="420" y1="405" x2="1370" y2="405" stroke="#888" stroke-width="1" stroke-dasharray="8 6"/>
+<text x="395" y="399" font-size="14" text-anchor="end" fill="#1a1a1a" font-weight="bold" font-style="normal">4 этаж</text>
+<line x1="420" y1="555" x2="1370" y2="555" stroke="#888" stroke-width="1" stroke-dasharray="8 6"/>
+<text x="395" y="549" font-size="14" text-anchor="end" fill="#1a1a1a" font-weight="bold" font-style="normal">3 этаж</text>
+<line x1="420" y1="705" x2="1370" y2="705" stroke="#888" stroke-width="1" stroke-dasharray="8 6"/>
+<text x="395" y="699" font-size="14" text-anchor="end" fill="#1a1a1a" font-weight="bold" font-style="normal">2 этаж</text>
+<line x1="420" y1="855" x2="1370" y2="855" stroke="#888" stroke-width="1" stroke-dasharray="8 6"/>
+<text x="395" y="849" font-size="14" text-anchor="end" fill="#1a1a1a" font-weight="bold" font-style="normal">1 этаж</text>
+<line x1="660" y1="120" x2="660" y2="158" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="660" y1="158" x2="720" y2="158" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="745" cy="158" r="21" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="745" y="163" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="bold">M1</text>
+<line x1="766" y1="158" x2="800" y2="158" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="825" cy="158" r="21" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="825" y="162" font-size="12" text-anchor="middle" fill="#0a8f3c" font-weight="bold">BR1</text>
+<line x1="846" y1="158" x2="880" y2="158" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="905" cy="158" r="21" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="905" y="162" font-size="12" text-anchor="middle" fill="#1a1a1a" font-weight="bold">YB1</text>
+<line x1="975" y1="120" x2="975" y2="205" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="975" y1="120" x2="975" y2="128" stroke="#1a1a1a" stroke-width="2" marker-start="url(#ar)"/>
+<line x1="975" y1="205" x2="975" y2="197" stroke="#1a1a1a" stroke-width="2" marker-start="url(#ar)"/>
+<text x="995" y="142" font-size="14" text-anchor="start" fill="#1a1a1a" font-weight="bold" font-style="normal">Подъём-опускание грузовой каретки</text>
+<text x="995" y="162" font-size="12" text-anchor="start" fill="#444" font-weight="normal" font-style="normal">M1 — двигатель привода подъёма</text>
+<text x="995" y="179" font-size="12" text-anchor="start" fill="#0a8f3c" font-weight="normal" font-style="normal">BR1 — энкодер (положение/скорость каретки)</text>
+<text x="995" y="196" font-size="12" text-anchor="start" fill="#444" font-weight="normal" font-style="normal">YB1 — тормоз электромагнитный (удержание груза)</text>
+<circle cx="660" cy="128" r="15" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="660" y="132" font-size="10" text-anchor="middle" fill="#0a8f3c" font-weight="bold">SQ0</text>
+<text x="682" y="132" font-size="10" text-anchor="start" fill="#0a8f3c" font-weight="normal" font-style="normal">SQ0 — концевой выкл. «верх» (перебег)</text>
+<circle cx="660" cy="977" r="15" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="660" y="980" font-size="10" text-anchor="middle" fill="#0a8f3c" font-weight="bold">SQ9</text>
+<text x="682" y="981" font-size="10" text-anchor="start" fill="#0a8f3c" font-weight="normal" font-style="normal">SQ9 — концевой выкл. «низ» (перебег)</text>
+<text x="660" y="270" font-size="12" text-anchor="middle" fill="#1a1a1a" font-weight="bold" font-style="normal">Выдвижение телескопических вил (захват паллеты)</text>
+<line x1="600" y1="280" x2="720" y2="280" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="600" y1="280" x2="608" y2="280" stroke="#1a1a1a" stroke-width="2" marker-start="url(#ar)"/>
+<line x1="720" y1="280" x2="712" y2="280" stroke="#1a1a1a" stroke-width="2" marker-start="url(#ar)"/>
+<rect x="565" y="294" width="190" height="52" rx="0" fill="#eef" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="626" cy="320" r="19" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="626" y="325" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="bold">M2</text>
+<circle cx="696" cy="320" r="18" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="696" y="324" font-size="11" text-anchor="middle" fill="#0a8f3c" font-weight="bold">BR2</text>
+<line x1="565" y1="320" x2="485" y2="320" stroke="#1a1a1a" stroke-width="2"/>
+<polygon points="485,311 445,311 445,329 485,329" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="755" y1="320" x2="780" y2="320" stroke="#1a1a1a" stroke-width="2"/>
+<polygon points="780,311 810,311 810,329 780,329" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<text x="445" y="306" font-size="8" text-anchor="start" fill="#888" font-weight="normal" font-style="normal">паллета</text>
+<circle cx="605" cy="368" r="17" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="605" y="371" font-size="9" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQ8.1</text>
+<circle cx="660" cy="368" r="17" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="660" y="371" font-size="9" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQ8.2</text>
+<circle cx="715" cy="368" r="17" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="715" y="371" font-size="9" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQ8.3</text>
+<text x="830" y="298" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="bold" font-style="normal">Грузовая каретка (вся высота мачты):</text>
+<text x="830" y="316" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="normal">M2 — привод вил · BR2 — энкодер вил</text>
+<text x="830" y="334" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="normal">SQ8.1…8.3 — положение вил (убраны/влево/вправо)</text>
+<text x="830" y="352" font-size="11" text-anchor="start" fill="#e07000" font-weight="normal" font-style="normal">BG1 — наличие паллеты на вилах (предложено)</text>
+<line x1="643.0" y1="250" x2="578" y2="250" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="560" cy="250" r="16" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="560" y="254" font-size="10" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQ5a</text>
+<circle cx="522" cy="250" r="16" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="522" y="254" font-size="10" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQ5b</text>
+<circle cx="541" cy="220" r="15" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="541" y="223" font-size="9" text-anchor="middle" fill="#0a8f3c" font-weight="bold">SQ5c</text>
+<line x1="541" y1="235" x2="541" y2="250" stroke="#1a1a1a" stroke-width="1"/>
+<line x1="643.0" y1="405" x2="578" y2="405" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="560" cy="405" r="16" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="560" y="408" font-size="10" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQ4a</text>
+<circle cx="522" cy="405" r="16" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="522" y="408" font-size="10" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQ4b</text>
+<circle cx="541" cy="375" r="15" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="541" y="378" font-size="9" text-anchor="middle" fill="#0a8f3c" font-weight="bold">SQ4c</text>
+<line x1="541" y1="390" x2="541" y2="405" stroke="#1a1a1a" stroke-width="1"/>
+<line x1="643.0" y1="555" x2="578" y2="555" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="560" cy="555" r="16" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="560" y="558" font-size="10" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQ3a</text>
+<circle cx="522" cy="555" r="16" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="522" y="558" font-size="10" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQ3b</text>
+<circle cx="541" cy="525" r="15" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="541" y="528" font-size="9" text-anchor="middle" fill="#0a8f3c" font-weight="bold">SQ3c</text>
+<line x1="541" y1="540" x2="541" y2="555" stroke="#1a1a1a" stroke-width="1"/>
+<line x1="643.0" y1="705" x2="578" y2="705" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="560" cy="705" r="16" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="560" y="708" font-size="10" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQ2a</text>
+<circle cx="522" cy="705" r="16" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="522" y="708" font-size="10" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQ2b</text>
+<circle cx="541" cy="675" r="15" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="541" y="678" font-size="9" text-anchor="middle" fill="#0a8f3c" font-weight="bold">SQ2c</text>
+<line x1="541" y1="690" x2="541" y2="705" stroke="#1a1a1a" stroke-width="1"/>
+<line x1="643.0" y1="855" x2="578" y2="855" stroke="#1a1a1a" stroke-width="2"/>
+<circle cx="560" cy="855" r="16" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="560" y="858" font-size="10" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQ1a</text>
+<circle cx="522" cy="855" r="16" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="522" y="858" font-size="10" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQ1b</text>
+<circle cx="541" cy="825" r="15" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="541" y="828" font-size="9" text-anchor="middle" fill="#0a8f3c" font-weight="bold">SQ1c</text>
+<line x1="541" y1="840" x2="541" y2="855" stroke="#1a1a1a" stroke-width="1"/>
+<text x="490" y="198" font-size="11" text-anchor="end" fill="#1a1a1a" font-weight="normal" font-style="normal">SQna, SQnb — сдвоенный датчик этажа (точная остановка по высоте)</text>
+<text x="490" y="214" font-size="11" text-anchor="end" fill="#0a8f3c" font-weight="normal" font-style="normal">SQnc — датчик перебега этажа</text>
+<line x1="1030" y1="208" x2="1030" y2="292" stroke="#d40000" stroke-width="4"/>
+<line x1="1230" y1="208" x2="1230" y2="292" stroke="#d40000" stroke-width="4"/>
+<rect x="1038" y="214" width="184" height="72" rx="0" fill="#fff" stroke="#d40000" stroke-width="1.5"/>
+<line x1="1068.6666666666667" y1="214" x2="1068.6666666666667" y2="286" stroke="#d40000" stroke-width="1"/>
+<line x1="1099.3333333333333" y1="214" x2="1099.3333333333333" y2="286" stroke="#d40000" stroke-width="1"/>
+<line x1="1130.0" y1="214" x2="1130.0" y2="286" stroke="#d40000" stroke-width="1"/>
+<line x1="1160.6666666666667" y1="214" x2="1160.6666666666667" y2="286" stroke="#d40000" stroke-width="1"/>
+<line x1="1191.3333333333333" y1="214" x2="1191.3333333333333" y2="286" stroke="#d40000" stroke-width="1"/>
+<line x1="1038" y1="232.0" x2="1222" y2="232.0" stroke="#d40000" stroke-width="1"/>
+<line x1="1038" y1="250.0" x2="1222" y2="250.0" stroke="#d40000" stroke-width="1"/>
+<line x1="1038" y1="268.0" x2="1222" y2="268.0" stroke="#d40000" stroke-width="1"/>
+<text x="1130.0" y="253" font-size="11" text-anchor="middle" fill="#d40000" font-weight="normal" font-style="normal">Пост 5 эт.</text>
+<line x1="1230" y1="225" x2="1272" y2="225" stroke="#d40000" stroke-width="2"/>
+<circle cx="1290" cy="225" r="16" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1290" y="228" font-size="9" text-anchor="middle" fill="#d40000" font-weight="bold">SQ5.1</text>
+<circle cx="1330" cy="225" r="16" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1330" y="228" font-size="9" text-anchor="middle" fill="#d40000" font-weight="bold">SQ5.2</text>
+<line x1="1230" y1="250" x2="1272" y2="250" stroke="#d40000" stroke-width="2"/>
+<circle cx="1290" cy="250" r="16" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1290" y="254" font-size="10" text-anchor="middle" fill="#d40000" font-weight="bold">YL5</text>
+<line x1="1230" y1="275" x2="1272" y2="275" stroke="#d40000" stroke-width="2"/>
+<circle cx="1290" cy="275" r="16" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="1290" y="278" font-size="10" text-anchor="middle" fill="#0a8f3c" font-weight="bold">BL5</text>
+<line x1="1030" y1="363" x2="1030" y2="447" stroke="#d40000" stroke-width="4"/>
+<line x1="1230" y1="363" x2="1230" y2="447" stroke="#d40000" stroke-width="4"/>
+<rect x="1038" y="369" width="184" height="72" rx="0" fill="#fff" stroke="#d40000" stroke-width="1.5"/>
+<line x1="1068.6666666666667" y1="369" x2="1068.6666666666667" y2="441" stroke="#d40000" stroke-width="1"/>
+<line x1="1099.3333333333333" y1="369" x2="1099.3333333333333" y2="441" stroke="#d40000" stroke-width="1"/>
+<line x1="1130.0" y1="369" x2="1130.0" y2="441" stroke="#d40000" stroke-width="1"/>
+<line x1="1160.6666666666667" y1="369" x2="1160.6666666666667" y2="441" stroke="#d40000" stroke-width="1"/>
+<line x1="1191.3333333333333" y1="369" x2="1191.3333333333333" y2="441" stroke="#d40000" stroke-width="1"/>
+<line x1="1038" y1="387.0" x2="1222" y2="387.0" stroke="#d40000" stroke-width="1"/>
+<line x1="1038" y1="405.0" x2="1222" y2="405.0" stroke="#d40000" stroke-width="1"/>
+<line x1="1038" y1="423.0" x2="1222" y2="423.0" stroke="#d40000" stroke-width="1"/>
+<text x="1130.0" y="408" font-size="11" text-anchor="middle" fill="#d40000" font-weight="normal" font-style="normal">Пост 4 эт.</text>
+<line x1="1230" y1="380" x2="1272" y2="380" stroke="#d40000" stroke-width="2"/>
+<circle cx="1290" cy="380" r="16" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1290" y="383" font-size="9" text-anchor="middle" fill="#d40000" font-weight="bold">SQ4.1</text>
+<circle cx="1330" cy="380" r="16" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1330" y="383" font-size="9" text-anchor="middle" fill="#d40000" font-weight="bold">SQ4.2</text>
+<line x1="1230" y1="405" x2="1272" y2="405" stroke="#d40000" stroke-width="2"/>
+<circle cx="1290" cy="405" r="16" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1290" y="408" font-size="10" text-anchor="middle" fill="#d40000" font-weight="bold">YL4</text>
+<line x1="1230" y1="430" x2="1272" y2="430" stroke="#d40000" stroke-width="2"/>
+<circle cx="1290" cy="430" r="16" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="1290" y="434" font-size="10" text-anchor="middle" fill="#0a8f3c" font-weight="bold">BL4</text>
+<line x1="1030" y1="513" x2="1030" y2="597" stroke="#d40000" stroke-width="4"/>
+<line x1="1230" y1="513" x2="1230" y2="597" stroke="#d40000" stroke-width="4"/>
+<rect x="1038" y="519" width="184" height="72" rx="0" fill="#fff" stroke="#d40000" stroke-width="1.5"/>
+<line x1="1068.6666666666667" y1="519" x2="1068.6666666666667" y2="591" stroke="#d40000" stroke-width="1"/>
+<line x1="1099.3333333333333" y1="519" x2="1099.3333333333333" y2="591" stroke="#d40000" stroke-width="1"/>
+<line x1="1130.0" y1="519" x2="1130.0" y2="591" stroke="#d40000" stroke-width="1"/>
+<line x1="1160.6666666666667" y1="519" x2="1160.6666666666667" y2="591" stroke="#d40000" stroke-width="1"/>
+<line x1="1191.3333333333333" y1="519" x2="1191.3333333333333" y2="591" stroke="#d40000" stroke-width="1"/>
+<line x1="1038" y1="537.0" x2="1222" y2="537.0" stroke="#d40000" stroke-width="1"/>
+<line x1="1038" y1="555.0" x2="1222" y2="555.0" stroke="#d40000" stroke-width="1"/>
+<line x1="1038" y1="573.0" x2="1222" y2="573.0" stroke="#d40000" stroke-width="1"/>
+<text x="1130.0" y="558" font-size="11" text-anchor="middle" fill="#d40000" font-weight="normal" font-style="normal">Пост 3 эт.</text>
+<line x1="1230" y1="530" x2="1272" y2="530" stroke="#d40000" stroke-width="2"/>
+<circle cx="1290" cy="530" r="16" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1290" y="533" font-size="9" text-anchor="middle" fill="#d40000" font-weight="bold">SQ3.1</text>
+<circle cx="1330" cy="530" r="16" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1330" y="533" font-size="9" text-anchor="middle" fill="#d40000" font-weight="bold">SQ3.2</text>
+<line x1="1230" y1="555" x2="1272" y2="555" stroke="#d40000" stroke-width="2"/>
+<circle cx="1290" cy="555" r="16" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1290" y="558" font-size="10" text-anchor="middle" fill="#d40000" font-weight="bold">YL3</text>
+<line x1="1230" y1="580" x2="1272" y2="580" stroke="#d40000" stroke-width="2"/>
+<circle cx="1290" cy="580" r="16" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="1290" y="584" font-size="10" text-anchor="middle" fill="#0a8f3c" font-weight="bold">BL3</text>
+<line x1="1030" y1="663" x2="1030" y2="747" stroke="#d40000" stroke-width="4"/>
+<line x1="1230" y1="663" x2="1230" y2="747" stroke="#d40000" stroke-width="4"/>
+<rect x="1038" y="669" width="184" height="72" rx="0" fill="#fff" stroke="#d40000" stroke-width="1.5"/>
+<line x1="1068.6666666666667" y1="669" x2="1068.6666666666667" y2="741" stroke="#d40000" stroke-width="1"/>
+<line x1="1099.3333333333333" y1="669" x2="1099.3333333333333" y2="741" stroke="#d40000" stroke-width="1"/>
+<line x1="1130.0" y1="669" x2="1130.0" y2="741" stroke="#d40000" stroke-width="1"/>
+<line x1="1160.6666666666667" y1="669" x2="1160.6666666666667" y2="741" stroke="#d40000" stroke-width="1"/>
+<line x1="1191.3333333333333" y1="669" x2="1191.3333333333333" y2="741" stroke="#d40000" stroke-width="1"/>
+<line x1="1038" y1="687.0" x2="1222" y2="687.0" stroke="#d40000" stroke-width="1"/>
+<line x1="1038" y1="705.0" x2="1222" y2="705.0" stroke="#d40000" stroke-width="1"/>
+<line x1="1038" y1="723.0" x2="1222" y2="723.0" stroke="#d40000" stroke-width="1"/>
+<text x="1130.0" y="708" font-size="11" text-anchor="middle" fill="#d40000" font-weight="normal" font-style="normal">Пост 2 эт.</text>
+<line x1="1230" y1="680" x2="1272" y2="680" stroke="#d40000" stroke-width="2"/>
+<circle cx="1290" cy="680" r="16" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1290" y="683" font-size="9" text-anchor="middle" fill="#d40000" font-weight="bold">SQ2.1</text>
+<circle cx="1330" cy="680" r="16" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1330" y="683" font-size="9" text-anchor="middle" fill="#d40000" font-weight="bold">SQ2.2</text>
+<line x1="1230" y1="705" x2="1272" y2="705" stroke="#d40000" stroke-width="2"/>
+<circle cx="1290" cy="705" r="16" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1290" y="708" font-size="10" text-anchor="middle" fill="#d40000" font-weight="bold">YL2</text>
+<line x1="1230" y1="730" x2="1272" y2="730" stroke="#d40000" stroke-width="2"/>
+<circle cx="1290" cy="730" r="16" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="1290" y="734" font-size="10" text-anchor="middle" fill="#0a8f3c" font-weight="bold">BL2</text>
+<line x1="1030" y1="813" x2="1030" y2="897" stroke="#d40000" stroke-width="4"/>
+<line x1="1230" y1="813" x2="1230" y2="897" stroke="#d40000" stroke-width="4"/>
+<rect x="1038" y="819" width="184" height="72" rx="0" fill="#fff" stroke="#d40000" stroke-width="1.5"/>
+<line x1="1068.6666666666667" y1="819" x2="1068.6666666666667" y2="891" stroke="#d40000" stroke-width="1"/>
+<line x1="1099.3333333333333" y1="819" x2="1099.3333333333333" y2="891" stroke="#d40000" stroke-width="1"/>
+<line x1="1130.0" y1="819" x2="1130.0" y2="891" stroke="#d40000" stroke-width="1"/>
+<line x1="1160.6666666666667" y1="819" x2="1160.6666666666667" y2="891" stroke="#d40000" stroke-width="1"/>
+<line x1="1191.3333333333333" y1="819" x2="1191.3333333333333" y2="891" stroke="#d40000" stroke-width="1"/>
+<line x1="1038" y1="837.0" x2="1222" y2="837.0" stroke="#d40000" stroke-width="1"/>
+<line x1="1038" y1="855.0" x2="1222" y2="855.0" stroke="#d40000" stroke-width="1"/>
+<line x1="1038" y1="873.0" x2="1222" y2="873.0" stroke="#d40000" stroke-width="1"/>
+<text x="1130.0" y="858" font-size="11" text-anchor="middle" fill="#d40000" font-weight="normal" font-style="normal">Пост 1 эт.</text>
+<line x1="1230" y1="830" x2="1272" y2="830" stroke="#d40000" stroke-width="2"/>
+<circle cx="1290" cy="830" r="16" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1290" y="833" font-size="9" text-anchor="middle" fill="#d40000" font-weight="bold">SQ1.1</text>
+<circle cx="1330" cy="830" r="16" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1330" y="833" font-size="9" text-anchor="middle" fill="#d40000" font-weight="bold">SQ1.2</text>
+<line x1="1230" y1="855" x2="1272" y2="855" stroke="#d40000" stroke-width="2"/>
+<circle cx="1290" cy="855" r="16" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1290" y="858" font-size="10" text-anchor="middle" fill="#d40000" font-weight="bold">YL1</text>
+<line x1="1230" y1="880" x2="1272" y2="880" stroke="#d40000" stroke-width="2"/>
+<circle cx="1290" cy="880" r="16" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="1290" y="884" font-size="10" text-anchor="middle" fill="#0a8f3c" font-weight="bold">BL1</text>
+<text x="1360" y="212" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="bold" font-style="normal">Пост приёма/выдачи паллет на каждом этаже:</text>
+<text x="1360" y="228" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="normal">SQn.1, SQn.2 — датчики закрытия калитки</text>
+<text x="1360" y="246" font-size="11" text-anchor="start" fill="#d40000" font-weight="normal" font-style="normal">YLn — электромагнитный замок калитки</text>
+<text x="1360" y="266" font-size="11" text-anchor="start" fill="#0a8f3c" font-weight="normal" font-style="normal">BLn — лазерный сканер безопасности</text>
+<text x="1360" y="281" font-size="10" text-anchor="start" fill="#0a8f3c" font-weight="normal" font-style="normal">(контроль присутствия человека в проёме)</text>
+<line x1="420" y1="915" x2="1370" y2="915" stroke="#888" stroke-width="1" stroke-dasharray="8 6"/>
+<text x="395" y="909" font-size="12" text-anchor="end" fill="#888" font-weight="normal" font-style="normal">Зона загрузки (1 эт.)</text>
+<rect x="80" y="880" width="70" height="45" rx="4" fill="#eef4ff" stroke="#0050c8" stroke-width="2"/>
+<text x="115" y="907" font-size="14" text-anchor="middle" fill="#0050c8" font-weight="bold" font-style="normal">PU1</text>
+<text x="115" y="867" font-size="12" text-anchor="middle" fill="#0050c8" font-weight="normal" font-style="normal">Пульт управления</text>
+<text x="115" y="882" font-size="12" text-anchor="middle" fill="#0050c8" font-weight="normal" font-style="normal">сенсорный (HMI)</text>
+<rect x="300" y="855" width="30" height="55" rx="0" fill="#f0f0f0" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="345" y1="855" x2="345" y2="915" stroke="#1a1a1a" stroke-width="3"/>
+<text x="300" y="845" font-size="12" text-anchor="start" fill="#1a1a1a" font-weight="bold" font-style="normal">Ворота загрузки</text>
+<circle cx="420" cy="915" r="16" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="420" y="918" font-size="9" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQv1</text>
+<circle cx="470" cy="915" r="16" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="470" y="918" font-size="9" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQv2</text>
+<line x1="440" y1="915" x2="450" y2="915" stroke="#1a1a1a" stroke-width="2"/>
+<text x="400" y="947" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="normal">SQv1, SQv2 — датчики положения ворот (открыто/закрыто)</text>
+<circle cx="560" cy="915" r="17" fill="#fff" stroke="#e07000" stroke-width="2"/>
+<text x="560" y="919" font-size="11" text-anchor="middle" fill="#e07000" font-weight="bold">M3</text>
+<circle cx="610" cy="915" r="17" fill="#fff" stroke="#e07000" stroke-width="2"/>
+<text x="610" y="919" font-size="11" text-anchor="middle" fill="#e07000" font-weight="bold">YL0</text>
+<line x1="577" y1="915" x2="593" y2="915" stroke="#e07000" stroke-width="2"/>
+<text x="540" y="947" font-size="11" text-anchor="start" fill="#e07000" font-weight="normal" font-style="normal">M3 — привод ворот, YL0 — замок ворот (предложено)</text>
+<rect x="80" y="985" width="1280" height="180" rx="6" fill="#f7faff" stroke="#0050c8" stroke-width="2"/>
+<text x="94" y="1009" font-size="15" text-anchor="start" fill="#0050c8" font-weight="bold" font-style="normal">A1 — Шкаф управления (ПЛК)</text>
+<text x="350" y="1009" font-size="11" text-anchor="start" fill="#0a8f3c" font-weight="normal" font-style="normal">— добавлено при детализации</text>
+<rect x="94" y="1025" width="250" height="126" rx="4" fill="#fff" stroke="#0050c8" stroke-width="1.5"/>
+<text x="104" y="1045" font-size="12" text-anchor="start" fill="#0050c8" font-weight="bold" font-style="normal">Контроллер A1</text>
+<text x="104" y="1065" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">CPU + модули DI/DO/AI</text>
+<text x="104" y="1081" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">Ethernet/Modbus TCP → HMI</text>
+<text x="104" y="1097" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">Связь с ПЧ по полевой шине</text>
+<text x="104" y="1113" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">Безопасный ПЛК / реле безопасности</text>
+<rect x="358" y="1025" width="250" height="126" rx="4" fill="#fff" stroke="#0050c8" stroke-width="1.5"/>
+<text x="368" y="1045" font-size="12" text-anchor="start" fill="#0050c8" font-weight="bold" font-style="normal">Силовая часть</text>
+<text x="368" y="1065" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">UZ1 — ПЧ привода подъёма M1</text>
+<text x="368" y="1081" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">UZ2 — ПЧ привода вил M2</text>
+<text x="368" y="1097" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">UZ3 — ПЧ/пускатель ворот M3</text>
+<text x="368" y="1113" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">QF1… — автоматы защиты, STO</text>
+<rect x="622" y="1025" width="250" height="126" rx="4" fill="#fff" stroke="#0050c8" stroke-width="1.5"/>
+<text x="632" y="1045" font-size="12" text-anchor="start" fill="#0050c8" font-weight="bold" font-style="normal">Контур безопасности</text>
+<text x="632" y="1065" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">SF1 — кнопка «Аварийный стоп»</text>
+<text x="632" y="1081" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">SQ0/SQ9 — перебег по высоте</text>
+<text x="632" y="1097" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">BLn — лаз. сканеры калиток</text>
+<text x="632" y="1113" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">YBx — тормоз в цепи STO</text>
+<rect x="886" y="1025" width="460" height="126" rx="4" fill="#fff" stroke="#0050c8" stroke-width="1.5"/>
+<text x="896" y="1045" font-size="12" text-anchor="start" fill="#0050c8" font-weight="bold" font-style="normal">Адресация сигналов (сводно)</text>
+<text x="896" y="1065" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">DI: датчики этажей SQna/b/c (15), положение вил (3), закрытие калиток (10),</text>
+<text x="896" y="1081" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">     положение ворот (2), перебег (2), наличие паллеты на вилах (1)</text>
+<text x="896" y="1097" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">DO: замки калиток YL1…5 (5), замок ворот YL0, тормоз YB1, разрешения ПЧ, индикация</text>
+<text x="896" y="1113" font-size="10.5" text-anchor="start" fill="#333" font-weight="normal" font-style="normal">AI / энкодеры: BR1 (подъём), BR2 (вилы) · Безопасность: SF1, BLn, реле — отдельный контур</text>
+<rect x="80" y="120" width="300" height="500" rx="6" fill="#fafafa" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="94" y="146" font-size="15" text-anchor="start" fill="#1a1a1a" font-weight="bold" font-style="normal">Условные обозначения</text>
+<circle cx="116" cy="174" r="15" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="116" y="178" font-size="10" text-anchor="middle" fill="#1a1a1a" font-weight="bold">M</text>
+<text x="142" y="178" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="normal">Электродвигатель привода</text>
+<circle cx="116" cy="212" r="15" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="116" y="216" font-size="10" text-anchor="middle" fill="#0a8f3c" font-weight="bold">BR</text>
+<text x="142" y="216" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="normal">Энкодер / датчик положения вала</text>
+<circle cx="116" cy="250" r="15" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="116" y="254" font-size="10" text-anchor="middle" fill="#1a1a1a" font-weight="bold">YB</text>
+<text x="142" y="254" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="normal">Тормоз электромагнитный</text>
+<circle cx="116" cy="288" r="15" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="116" y="292" font-size="10" text-anchor="middle" fill="#1a1a1a" font-weight="bold">SQ</text>
+<text x="142" y="292" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="normal">Путевой / концевой выключатель, датчик</text>
+<circle cx="116" cy="326" r="15" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="116" y="330" font-size="10" text-anchor="middle" fill="#d40000" font-weight="bold">YL</text>
+<text x="142" y="330" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="normal">Замок электромагнитный</text>
+<circle cx="116" cy="364" r="15" fill="#fff" stroke="#0a8f3c" stroke-width="2"/>
+<text x="116" y="368" font-size="10" text-anchor="middle" fill="#0a8f3c" font-weight="bold">BL</text>
+<text x="142" y="368" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="normal">Лазерный сканер безопасности</text>
+<circle cx="116" cy="402" r="15" fill="#fff" stroke="#e07000" stroke-width="2"/>
+<text x="116" y="406" font-size="10" text-anchor="middle" fill="#e07000" font-weight="bold">BG</text>
+<text x="142" y="406" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="normal">Датчик наличия паллеты (предложено)</text>
+<circle cx="116" cy="440" r="15" fill="#fff" stroke="#0050c8" stroke-width="2"/>
+<text x="116" y="444" font-size="10" text-anchor="middle" fill="#0050c8" font-weight="bold">PU</text>
+<text x="142" y="444" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="normal">Пульт управления / HMI</text>
+<circle cx="116" cy="478" r="15" fill="#fff" stroke="#0050c8" stroke-width="2"/>
+<text x="116" y="482" font-size="10" text-anchor="middle" fill="#0050c8" font-weight="bold">UZ</text>
+<text x="142" y="482" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="normal">Преобразователь частоты (ПЧ)</text>
+<circle cx="116" cy="516" r="15" fill="#fff" stroke="#0050c8" stroke-width="2"/>
+<text x="116" y="520" font-size="10" text-anchor="middle" fill="#0050c8" font-weight="bold">A1</text>
+<text x="142" y="520" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="normal">ПЛК / шкаф управления</text>
+<circle cx="116" cy="554" r="15" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="116" y="558" font-size="10" text-anchor="middle" fill="#d40000" font-weight="bold">SF</text>
+<text x="142" y="558" font-size="11" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="normal">Кнопка аварийного останова</text>
+<text x="94" y="590" font-size="10" text-anchor="start" fill="#0a8f3c" font-weight="normal" font-style="normal">Зелёным — добавленные/уточнённые элементы.</text>
+<text x="94" y="606" font-size="10" text-anchor="start" fill="#e07000" font-weight="normal" font-style="normal">Оранжевым — предложено к добавлению.</text>
+<rect x="80" y="645" width="300" height="150" rx="6" fill="#fff8f0" stroke="#e07000" stroke-width="1.5"/>
+<text x="92" y="667" font-size="13" text-anchor="start" fill="#e07000" font-weight="bold" font-style="normal">⚠ Уточнить:</text>
+<text x="92" y="689" font-size="10.5" text-anchor="start" fill="#7a4" font-weight="normal" font-style="normal">1. Тип лаз. сканеров BLn (исх. «????»):</text>
+<text x="92" y="703" font-size="10.5" text-anchor="start" fill="#7a4" font-weight="normal" font-style="normal">   сканер безопасности проёма или</text>
+<text x="92" y="717" font-size="10.5" text-anchor="start" fill="#7a4" font-weight="normal" font-style="normal">   контроль габарита/наличия паллеты?</text>
+<text x="92" y="731" font-size="10.5" text-anchor="start" fill="#7a4" font-weight="normal" font-style="normal">2. Вилы телескопические одинарного</text>
+<text x="92" y="745" font-size="10.5" text-anchor="start" fill="#7a4" font-weight="normal" font-style="normal">   или двойного хода (double-deep)?</text>
+<text x="92" y="759" font-size="10.5" text-anchor="start" fill="#7a4" font-weight="normal" font-style="normal">3. Противовес/полиспаст подъёма —</text>
+<text x="92" y="773" font-size="10.5" text-anchor="start" fill="#7a4" font-weight="normal" font-style="normal">   уточнить кинематику и расчёт M1.</text>
+<text x="92" y="787" font-size="10.5" text-anchor="start" fill="#7a4" font-weight="normal" font-style="normal">4. Загрузка только с 1 этажа или с любого?</text>
+</svg>
