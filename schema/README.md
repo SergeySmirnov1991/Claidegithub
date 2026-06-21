@@ -17,9 +17,13 @@
 |---|---|
 | [`stacker-schema-detailed.svg`](stacker-schema-detailed.svg) / `.pdf` / `.png` | Функциональная схема оборудования (вектор + PDF высокого разрешения + растр) |
 | [`asu-tp-architecture.svg`](asu-tp-architecture.svg) / `.pdf` / `.png` | Структурная схема **АСУ ТП на базе Weintek** |
+| [`power-safety-schematic.svg`](power-safety-schematic.svg) / `.pdf` / `.png` | Принципиальная электрическая схема **силовой части и цепей безопасности** |
+| [`io-wiring-diagram.svg`](io-wiring-diagram.svg) / `.pdf` / `.png` | Схема подключения **модулей Weintek iR** с адресацией клемм |
+| [`state-machine.svg`](state-machine.svg) / `.pdf` / `.png` | Диаграмма состояний (**конечный автомат**) управления |
+| [`codesys_stacker_fsm.st`](codesys_stacker_fsm.st) | Скелет управляющей программы на **CODESYS (ST)** |
 | [`asu-tp-specification.md`](asu-tp-specification.md) | Спецификация АСУ ТП (оборудование Weintek, сеть, **алгоритм работы**, безопасность) |
 | [`io-list.csv`](io-list.csv) | Перечень сигналов ввода-вывода |
-| `gen_schema.py`, `gen_asutp.py` | Скрипты-генераторы схем (параметрический SVG) |
+| `gen_*.py` | Скрипты-генераторы схем (параметрический SVG) |
 
 > **PDF высокого разрешения** (`stacker-schema-detailed.pdf`) — векторный,
 > масштабируется без потери качества; формат страницы ≈ A2 альбомный.
