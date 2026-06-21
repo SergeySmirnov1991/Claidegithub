@@ -1,0 +1,297 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="1180" viewBox="0 0 1720 1180" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="1720" height="1180" fill="#fff"/>
+<text x="860.0" y="34" font-size="21" text-anchor="middle" fill="#1a1a1a" font-weight="bold">Схема подключения удалённого ввода-вывода Weintek iR — адресация клемм</text>
+<text x="860.0" y="56" font-size="12.5" text-anchor="middle" fill="#555" font-weight="normal">iR-ETN40R (шинный соединитель) + 2× iR-DI16-K (входы) + iR-DO16-P (выходы) · EtherCAT / Modbus TCP</text>
+<rect x="60" y="80" width="300" height="84" rx="5" fill="#f7f0fb" stroke="#7a2bbf" stroke-width="2"/>
+<text x="210" y="104" font-size="15" text-anchor="middle" fill="#7a2bbf" font-weight="bold">iR-ETN40R</text>
+<text x="210" y="124" font-size="10.5" text-anchor="middle" fill="#333" font-weight="normal">Шинный соединитель</text>
+<text x="210" y="140" font-size="9.5" text-anchor="middle" fill="#333" font-weight="normal">EtherCAT / Modbus TCP → контроллер cMT</text>
+<text x="210" y="156" font-size="9.5" text-anchor="middle" fill="#555" font-weight="normal">Питание шины/логики 24В DC (от G1)</text>
+<line x1="360" y1="100" x2="470" y2="100" stroke="#7a2bbf" stroke-width="2"/>
+<rect x="470" y="82" width="150" height="40" rx="4" fill="#eef4ff" stroke="#0050c8" stroke-width="1.5"/>
+<text x="545" y="100" font-size="11" text-anchor="middle" fill="#0050c8" font-weight="bold">Контроллер</text>
+<text x="545" y="114" font-size="9" text-anchor="middle" fill="#333" font-weight="normal">Weintek cMT3072X</text>
+<rect x="660" y="82" width="150" height="40" rx="4" fill="#eef4ff" stroke="#0050c8" stroke-width="1.5"/>
+<text x="735" y="100" font-size="11" text-anchor="middle" fill="#0050c8" font-weight="bold">G1 — БП 24В</text>
+<text x="735" y="114" font-size="9.5" text-anchor="middle" fill="#333" font-weight="normal">+24В / 0В</text>
+<line x1="620" y1="100" x2="660" y2="100" stroke="#0050c8" stroke-width="2"/>
+<line x1="210" y1="164" x2="210" y2="196" stroke="#7a2bbf" stroke-width="2"/>
+<line x1="110" y1="196" x2="1660" y2="196" stroke="#7a2bbf" stroke-width="2.5"/>
+<text x="120" y="190" font-size="10" text-anchor="start" fill="#7a2bbf" font-weight="normal">Локальная шина iR (модули пристыковываются к соединителю)</text>
+<rect x="60" y="220" width="500" height="46" rx="4" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="310.0" y="240" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="bold">iR-DI16-K (модуль входов №1)</text>
+<text x="310.0" y="257" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">16 дискретных входов 24В DC</text>
+<line x1="310.0" y1="196" x2="310.0" y2="220" stroke="#7a2bbf" stroke-width="1.5"/>
+<rect x="60" y="266" width="500" height="22" rx="0" fill="#f4f4f4" stroke="#1a1a1a" stroke-width="1"/>
+<text x="66" y="281" font-size="9.5" text-anchor="start" fill="#333" font-weight="bold">Клемма</text>
+<text x="118" y="281" font-size="9.5" text-anchor="start" fill="#333" font-weight="bold">Адрес</text>
+<text x="210" y="281" font-size="9.5" text-anchor="start" fill="#333" font-weight="bold">Сигнал</text>
+<text x="310" y="281" font-size="9.5" text-anchor="start" fill="#333" font-weight="bold">Описание</text>
+<rect x="60" y="288" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="305" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:0</text>
+<text x="118" y="305" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX0.0</text>
+<text x="210" y="305" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="bold">SQ1a</text>
+<text x="310" y="305" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Этаж 1 — остановка A</text>
+<rect x="60" y="315" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="332" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:1</text>
+<text x="118" y="332" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX0.1</text>
+<text x="210" y="332" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="bold">SQ1b</text>
+<text x="310" y="332" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Этаж 1 — остановка B</text>
+<rect x="60" y="342" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="359" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:2</text>
+<text x="118" y="359" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX0.2</text>
+<text x="210" y="359" font-size="9.5" text-anchor="start" fill="#0a8f3c" font-weight="bold">SQ1c</text>
+<text x="310" y="359" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Этаж 1 — перебег</text>
+<rect x="60" y="369" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="386" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:3</text>
+<text x="118" y="386" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX0.3</text>
+<text x="210" y="386" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="bold">SQ2a</text>
+<text x="310" y="386" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Этаж 2 — остановка A</text>
+<rect x="60" y="396" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="413" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:4</text>
+<text x="118" y="413" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX0.4</text>
+<text x="210" y="413" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="bold">SQ2b</text>
+<text x="310" y="413" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Этаж 2 — остановка B</text>
+<rect x="60" y="423" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="440" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:5</text>
+<text x="118" y="440" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX0.5</text>
+<text x="210" y="440" font-size="9.5" text-anchor="start" fill="#0a8f3c" font-weight="bold">SQ2c</text>
+<text x="310" y="440" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Этаж 2 — перебег</text>
+<rect x="60" y="450" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="467" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:6</text>
+<text x="118" y="467" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX0.6</text>
+<text x="210" y="467" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="bold">SQ3a</text>
+<text x="310" y="467" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Этаж 3 — остановка A</text>
+<rect x="60" y="477" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="494" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:7</text>
+<text x="118" y="494" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX0.7</text>
+<text x="210" y="494" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="bold">SQ3b</text>
+<text x="310" y="494" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Этаж 3 — остановка B</text>
+<rect x="60" y="504" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="521" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:8</text>
+<text x="118" y="521" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX1.0</text>
+<text x="210" y="521" font-size="9.5" text-anchor="start" fill="#0a8f3c" font-weight="bold">SQ3c</text>
+<text x="310" y="521" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Этаж 3 — перебег</text>
+<rect x="60" y="531" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="548" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:9</text>
+<text x="118" y="548" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX1.1</text>
+<text x="210" y="548" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="bold">SQ4a</text>
+<text x="310" y="548" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Этаж 4 — остановка A</text>
+<rect x="60" y="558" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="575" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:10</text>
+<text x="118" y="575" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX1.2</text>
+<text x="210" y="575" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="bold">SQ4b</text>
+<text x="310" y="575" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Этаж 4 — остановка B</text>
+<rect x="60" y="585" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="602" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:11</text>
+<text x="118" y="602" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX1.3</text>
+<text x="210" y="602" font-size="9.5" text-anchor="start" fill="#0a8f3c" font-weight="bold">SQ4c</text>
+<text x="310" y="602" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Этаж 4 — перебег</text>
+<rect x="60" y="612" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="629" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:12</text>
+<text x="118" y="629" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX1.4</text>
+<text x="210" y="629" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="bold">SQ5a</text>
+<text x="310" y="629" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Этаж 5 — остановка A</text>
+<rect x="60" y="639" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="656" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:13</text>
+<text x="118" y="656" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX1.5</text>
+<text x="210" y="656" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="bold">SQ5b</text>
+<text x="310" y="656" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Этаж 5 — остановка B</text>
+<rect x="60" y="666" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="683" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:14</text>
+<text x="118" y="683" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX1.6</text>
+<text x="210" y="683" font-size="9.5" text-anchor="start" fill="#0a8f3c" font-weight="bold">SQ5c</text>
+<text x="310" y="683" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Этаж 5 — перебег</text>
+<rect x="60" y="693" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="66" y="710" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X1:15</text>
+<text x="118" y="710" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX1.7</text>
+<text x="210" y="710" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="bold">SQ8.1</text>
+<text x="310" y="710" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Вилы убраны</text>
+<rect x="600" y="220" width="500" height="46" rx="4" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="850.0" y="240" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="bold">iR-DI16-K (модуль входов №2)</text>
+<text x="850.0" y="257" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">16 дискретных входов 24В DC</text>
+<line x1="850.0" y1="196" x2="850.0" y2="220" stroke="#7a2bbf" stroke-width="1.5"/>
+<rect x="600" y="266" width="500" height="22" rx="0" fill="#f4f4f4" stroke="#1a1a1a" stroke-width="1"/>
+<text x="606" y="281" font-size="9.5" text-anchor="start" fill="#333" font-weight="bold">Клемма</text>
+<text x="658" y="281" font-size="9.5" text-anchor="start" fill="#333" font-weight="bold">Адрес</text>
+<text x="750" y="281" font-size="9.5" text-anchor="start" fill="#333" font-weight="bold">Сигнал</text>
+<text x="850" y="281" font-size="9.5" text-anchor="start" fill="#333" font-weight="bold">Описание</text>
+<rect x="600" y="288" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="305" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:0</text>
+<text x="658" y="305" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX2.0</text>
+<text x="750" y="305" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="bold">SQ8.2</text>
+<text x="850" y="305" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Вилы выдвинуты влево</text>
+<rect x="600" y="315" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="332" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:1</text>
+<text x="658" y="332" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX2.1</text>
+<text x="750" y="332" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="bold">SQ8.3</text>
+<text x="850" y="332" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Вилы выдвинуты вправо</text>
+<rect x="600" y="342" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="359" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:2</text>
+<text x="658" y="359" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX2.2</text>
+<text x="750" y="359" font-size="9.5" text-anchor="start" fill="#e07000" font-weight="bold">BG0</text>
+<text x="850" y="359" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Паллета на вилах</text>
+<rect x="600" y="369" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="386" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:3</text>
+<text x="658" y="386" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX2.3</text>
+<text x="750" y="386" font-size="9.5" text-anchor="start" fill="#e07000" font-weight="bold">BG1</text>
+<text x="850" y="386" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Занятость места — эт.1</text>
+<rect x="600" y="396" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="413" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:4</text>
+<text x="658" y="413" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX2.4</text>
+<text x="750" y="413" font-size="9.5" text-anchor="start" fill="#e07000" font-weight="bold">BG2</text>
+<text x="850" y="413" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Занятость места — эт.2</text>
+<rect x="600" y="423" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="440" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:5</text>
+<text x="658" y="440" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX2.5</text>
+<text x="750" y="440" font-size="9.5" text-anchor="start" fill="#e07000" font-weight="bold">BG3</text>
+<text x="850" y="440" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Занятость места — эт.3</text>
+<rect x="600" y="450" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="467" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:6</text>
+<text x="658" y="467" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX2.6</text>
+<text x="750" y="467" font-size="9.5" text-anchor="start" fill="#e07000" font-weight="bold">BG4</text>
+<text x="850" y="467" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Занятость места — эт.4</text>
+<rect x="600" y="477" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="494" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:7</text>
+<text x="658" y="494" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX2.7</text>
+<text x="750" y="494" font-size="9.5" text-anchor="start" fill="#e07000" font-weight="bold">BG5</text>
+<text x="850" y="494" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Занятость места — эт.5</text>
+<rect x="600" y="504" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="521" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:8</text>
+<text x="658" y="521" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX3.0</text>
+<text x="750" y="521" font-size="9.5" text-anchor="start" fill="#d40000" font-weight="bold">SQ1.1</text>
+<text x="850" y="521" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Ворота эт.1 закрыты</text>
+<rect x="600" y="531" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="548" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:9</text>
+<text x="658" y="548" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX3.1</text>
+<text x="750" y="548" font-size="9.5" text-anchor="start" fill="#d40000" font-weight="bold">SQ2.1</text>
+<text x="850" y="548" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Ворота эт.2 закрыты</text>
+<rect x="600" y="558" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="575" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:10</text>
+<text x="658" y="575" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX3.2</text>
+<text x="750" y="575" font-size="9.5" text-anchor="start" fill="#d40000" font-weight="bold">SQ3.1</text>
+<text x="850" y="575" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Ворота эт.3 закрыты</text>
+<rect x="600" y="585" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="602" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:11</text>
+<text x="658" y="602" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX3.3</text>
+<text x="750" y="602" font-size="9.5" text-anchor="start" fill="#d40000" font-weight="bold">SQ4.1</text>
+<text x="850" y="602" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Ворота эт.4 закрыты</text>
+<rect x="600" y="612" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="629" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:12</text>
+<text x="658" y="629" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX3.4</text>
+<text x="750" y="629" font-size="9.5" text-anchor="start" fill="#d40000" font-weight="bold">SQ5.1</text>
+<text x="850" y="629" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Ворота эт.5 закрыты</text>
+<rect x="600" y="639" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="656" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:13</text>
+<text x="658" y="656" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX3.5</text>
+<text x="750" y="656" font-size="9.5" text-anchor="start" fill="#d40000" font-weight="bold">KSR_OK</text>
+<text x="850" y="656" font-size="9" text-anchor="start" fill="#333" font-weight="normal">«Безопасно» от реле KSR</text>
+<rect x="600" y="666" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="683" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:14</text>
+<text x="658" y="683" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX3.6</text>
+<text x="750" y="683" font-size="9.5" text-anchor="start" fill="#888" font-weight="bold">—</text>
+<text x="850" y="683" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Резерв</text>
+<rect x="600" y="693" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="606" y="710" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">X2:15</text>
+<text x="658" y="710" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%IX3.7</text>
+<text x="750" y="710" font-size="9.5" text-anchor="start" fill="#888" font-weight="bold">—</text>
+<text x="850" y="710" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Резерв</text>
+<rect x="1140" y="220" width="500" height="46" rx="4" fill="#fff" stroke="#d40000" stroke-width="2"/>
+<text x="1390.0" y="240" font-size="13" text-anchor="middle" fill="#d40000" font-weight="bold">iR-DO16-P (модуль выходов)</text>
+<text x="1390.0" y="257" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">16 дискретных выходов 24В DC</text>
+<line x1="1390.0" y1="196" x2="1390.0" y2="220" stroke="#7a2bbf" stroke-width="1.5"/>
+<rect x="1140" y="266" width="500" height="22" rx="0" fill="#f4f4f4" stroke="#d40000" stroke-width="1"/>
+<text x="1146" y="281" font-size="9.5" text-anchor="start" fill="#333" font-weight="bold">Клемма</text>
+<text x="1198" y="281" font-size="9.5" text-anchor="start" fill="#333" font-weight="bold">Адрес</text>
+<text x="1290" y="281" font-size="9.5" text-anchor="start" fill="#333" font-weight="bold">Сигнал</text>
+<text x="1390" y="281" font-size="9.5" text-anchor="start" fill="#333" font-weight="bold">Описание</text>
+<rect x="1140" y="288" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="305" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:0</text>
+<text x="1198" y="305" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX0.0</text>
+<text x="1290" y="305" font-size="9.5" text-anchor="start" fill="#d40000" font-weight="bold">YL1</text>
+<text x="1390" y="305" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Замок ворот эт.1</text>
+<rect x="1140" y="315" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="332" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:1</text>
+<text x="1198" y="332" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX0.1</text>
+<text x="1290" y="332" font-size="9.5" text-anchor="start" fill="#d40000" font-weight="bold">YL2</text>
+<text x="1390" y="332" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Замок ворот эт.2</text>
+<rect x="1140" y="342" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="359" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:2</text>
+<text x="1198" y="359" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX0.2</text>
+<text x="1290" y="359" font-size="9.5" text-anchor="start" fill="#d40000" font-weight="bold">YL3</text>
+<text x="1390" y="359" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Замок ворот эт.3</text>
+<rect x="1140" y="369" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="386" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:3</text>
+<text x="1198" y="386" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX0.3</text>
+<text x="1290" y="386" font-size="9.5" text-anchor="start" fill="#d40000" font-weight="bold">YL4</text>
+<text x="1390" y="386" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Замок ворот эт.4</text>
+<rect x="1140" y="396" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="413" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:4</text>
+<text x="1198" y="413" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX0.4</text>
+<text x="1290" y="413" font-size="9.5" text-anchor="start" fill="#d40000" font-weight="bold">YL5</text>
+<text x="1390" y="413" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Замок ворот эт.5</text>
+<rect x="1140" y="423" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="440" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:5</text>
+<text x="1198" y="440" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX0.5</text>
+<text x="1290" y="440" font-size="9.5" text-anchor="start" fill="#0050c8" font-weight="bold">HL1</text>
+<text x="1390" y="440" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Лампа «штабелёр в работе»</text>
+<rect x="1140" y="450" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="467" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:6</text>
+<text x="1198" y="467" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX0.6</text>
+<text x="1290" y="467" font-size="9.5" text-anchor="start" fill="#0050c8" font-weight="bold">HL2</text>
+<text x="1390" y="467" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Лампа/сирена «Авария»</text>
+<rect x="1140" y="477" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="494" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:7</text>
+<text x="1198" y="494" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX0.7</text>
+<text x="1290" y="494" font-size="9.5" text-anchor="start" fill="#0050c8" font-weight="bold">HL3</text>
+<text x="1390" y="494" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Лампа «Место занято»</text>
+<rect x="1140" y="504" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="521" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:8</text>
+<text x="1198" y="521" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX1.0</text>
+<text x="1290" y="521" font-size="9.5" text-anchor="start" fill="#0050c8" font-weight="bold">HA1</text>
+<text x="1390" y="521" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Звуковой сигнал движения</text>
+<rect x="1140" y="531" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="548" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:9</text>
+<text x="1198" y="548" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX1.1</text>
+<text x="1290" y="548" font-size="9.5" text-anchor="start" fill="#0a8f3c" font-weight="bold">KM2</text>
+<text x="1390" y="548" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Разрешение/готовность ПЧ</text>
+<rect x="1140" y="558" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="575" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:10</text>
+<text x="1198" y="575" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX1.2</text>
+<text x="1290" y="575" font-size="9.5" text-anchor="start" fill="#888" font-weight="bold">—</text>
+<text x="1390" y="575" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Резерв</text>
+<rect x="1140" y="585" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="602" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:11</text>
+<text x="1198" y="602" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX1.3</text>
+<text x="1290" y="602" font-size="9.5" text-anchor="start" fill="#888" font-weight="bold">—</text>
+<text x="1390" y="602" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Резерв</text>
+<rect x="1140" y="612" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="629" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:12</text>
+<text x="1198" y="629" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX1.4</text>
+<text x="1290" y="629" font-size="9.5" text-anchor="start" fill="#888" font-weight="bold">—</text>
+<text x="1390" y="629" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Резерв</text>
+<rect x="1140" y="639" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="656" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:13</text>
+<text x="1198" y="656" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX1.5</text>
+<text x="1290" y="656" font-size="9.5" text-anchor="start" fill="#888" font-weight="bold">—</text>
+<text x="1390" y="656" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Резерв</text>
+<rect x="1140" y="666" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="683" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:14</text>
+<text x="1198" y="683" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX1.6</text>
+<text x="1290" y="683" font-size="9.5" text-anchor="start" fill="#888" font-weight="bold">—</text>
+<text x="1390" y="683" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Резерв</text>
+<rect x="1140" y="693" width="500" height="27" rx="0" fill="#fff" stroke="#ccc" stroke-width="0.7"/>
+<text x="1146" y="710" font-size="9.5" text-anchor="start" fill="#1a1a1a" font-weight="normal">Y1:15</text>
+<text x="1198" y="710" font-size="9" text-anchor="start" fill="#7a2bbf" font-weight="normal">%QX1.7</text>
+<text x="1290" y="710" font-size="9.5" text-anchor="start" fill="#888" font-weight="bold">—</text>
+<text x="1390" y="710" font-size="9" text-anchor="start" fill="#333" font-weight="normal">Резерв</text>
+<rect x="60" y="1024" width="1600" height="128" rx="4" fill="#fafafa" stroke="#888" stroke-width="1.5"/>
+<text x="74" y="1048" font-size="13" text-anchor="start" fill="#1a1a1a" font-weight="bold">Примечания по подключению</text>
+<text x="74" y="1068" font-size="9" text-anchor="start" fill="#234" font-weight="normal">• Адреса %IX / %QX — ориентировочные (CODESYS на cMT3072X); фактическое отображение задаётся при конфигурировании iR-ETN. Для Modbus TCP — соответствующие</text>
+<text x="74" y="1082" font-size="9" text-anchor="start" fill="#234" font-weight="normal">  дискретные входы (1xxxx) и катушки (0xxxx).</text>
+<text x="74" y="1096" font-size="9" text-anchor="start" fill="#234" font-weight="normal">• Датчики — 3-проводные PNP (24В, 0В, сигнал); общий «минус» и питание датчиков — от шины 24В источника G1; экраны кабелей — на PE.</text>
+<text x="74" y="1110" font-size="9" text-anchor="start" fill="#234" font-weight="normal">• Защитные сигналы (SQn.1 ворота, BLn сканеры, SQ0/SQ9 перебег, SF аварийный стоп) дублируются в реле безопасности KSR (см. power-safety-schematic.svg);</text>
+<text x="74" y="1124" font-size="9" text-anchor="start" fill="#234" font-weight="normal">  в модули iR заводится диагностический «информационный» канал для логики и индикации этажа на панелях.</text>
+<text x="74" y="1138" font-size="9" text-anchor="start" fill="#234" font-weight="normal">• Энкодеры BR1/BR2 подключаются к энкодерным картам ПЧ UZ1/UZ2 и читаются контроллером по полевой шине (не через дискретные модули iR).</text>
+<text x="74" y="1152" font-size="9" text-anchor="start" fill="#234" font-weight="normal">• Замки YL1…YL5 — индуктивная нагрузка: применять выходы с защитой или внешние диоды/варисторы. При необходимости — промежуточные реле.</text>
+</svg>

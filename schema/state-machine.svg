@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1580" height="1080" viewBox="0 0 1580 1080" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="1580" height="1080" fill="#fff"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/></marker><marker id="ag" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0a8f3c"/></marker><marker id="ar" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d40000"/></marker><marker id="ao" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e07000"/></marker></defs>
+<text x="790.0" y="34" font-size="21" text-anchor="middle" fill="#1a1a1a" font-weight="bold">Конечный автомат управления штабелёром (для реализации в CODESYS)</text>
+<text x="790.0" y="56" font-size="12.5" text-anchor="middle" fill="#555" font-weight="normal">Рабочий цикл «вызов → забор → доставка → выгрузка/ожидание» и глобальные обработчики безопасности</text>
+<rect x="330" y="86" width="250" height="58" rx="12" fill="#f6f6f6" stroke="#888" stroke-width="2.2"/>
+<text x="455.0" y="110" font-size="13" text-anchor="middle" fill="#888" font-weight="bold">S0 · ИНИЦИАЛИЗАЦИЯ</text>
+<text x="455.0" y="129" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">самотест, чтение состояния</text>
+<rect x="330" y="176" width="250" height="58" rx="12" fill="#f6f6f6" stroke="#888" stroke-width="2.2"/>
+<text x="455.0" y="200" font-size="13" text-anchor="middle" fill="#888" font-weight="bold">S1 · КАЛИБРОВКА (HOMING)</text>
+<text x="455.0" y="219" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">поиск референса по высоте</text>
+<rect x="330" y="276" width="250" height="58" rx="12" fill="#e9f0ff" stroke="#0050c8" stroke-width="2.2"/>
+<text x="455.0" y="300" font-size="13" text-anchor="middle" fill="#0050c8" font-weight="bold">S2 · ОЖИДАНИЕ ВЫЗОВА</text>
+<text x="455.0" y="319" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">очередь заданий с панелей</text>
+<rect x="330" y="376" width="250" height="58" rx="12" fill="#f3f7ff" stroke="#0050c8" stroke-width="2.2"/>
+<text x="455.0" y="400" font-size="13" text-anchor="middle" fill="#0050c8" font-weight="bold">S3 · К ЭТАЖУ-ИСТОЧНИКУ</text>
+<text x="455.0" y="419" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">позиционирование по BR1/SQ</text>
+<rect x="330" y="476" width="250" height="58" rx="12" fill="#f3f7ff" stroke="#0050c8" stroke-width="2.2"/>
+<text x="455.0" y="500" font-size="13" text-anchor="middle" fill="#0050c8" font-weight="bold">S4 · ЗАХВАТ ПАЛЛЕТЫ</text>
+<text x="455.0" y="519" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">вилы → подъём → возврат</text>
+<rect x="330" y="576" width="250" height="58" rx="12" fill="#f3f7ff" stroke="#0050c8" stroke-width="2.2"/>
+<text x="455.0" y="600" font-size="13" text-anchor="middle" fill="#0050c8" font-weight="bold">S5 · К ЭТАЖУ НАЗНАЧЕНИЯ</text>
+<text x="455.0" y="619" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">позиционирование по BR1/SQ</text>
+<rect x="330" y="676" width="250" height="58" rx="12" fill="#f3f7ff" stroke="#0050c8" stroke-width="2.2"/>
+<text x="455.0" y="700" font-size="13" text-anchor="middle" fill="#0050c8" font-weight="bold">S6 · ПРОВЕРКА МЕСТА</text>
+<text x="455.0" y="719" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">чтение датчика занятости BGy</text>
+<rect x="160" y="790" width="250" height="58" rx="12" fill="#f0fbf3" stroke="#0a8f3c" stroke-width="2.2"/>
+<text x="285.0" y="814" font-size="13" text-anchor="middle" fill="#0a8f3c" font-weight="bold">S7 · ВЫГРУЗКА</text>
+<text x="285.0" y="833" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">вилы → опускание → возврат</text>
+<rect x="500" y="790" width="250" height="58" rx="12" fill="#fff7ed" stroke="#e07000" stroke-width="2.2"/>
+<text x="625.0" y="814" font-size="13" text-anchor="middle" fill="#e07000" font-weight="bold">S8 · ОЖИДАНИЕ МЕСТА</text>
+<text x="625.0" y="833" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">паллета на вилах, сигнал «занято»</text>
+<rect x="1060" y="300" width="300" height="58" rx="12" fill="#fff1f1" stroke="#d40000" stroke-width="2.2"/>
+<text x="1210.0" y="324" font-size="13" text-anchor="middle" fill="#d40000" font-weight="bold">G1 · БЛОКИРОВКА — ВОРОТА</text>
+<text x="1210.0" y="343" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">СТОП; индикация «ворота эт.N»</text>
+<rect x="1060" y="430" width="300" height="58" rx="12" fill="#ffe9e9" stroke="#d40000" stroke-width="2.2"/>
+<text x="1210.0" y="454" font-size="13" text-anchor="middle" fill="#d40000" font-weight="bold">G2 · АВАРИЙНЫЙ ОСТАНОВ</text>
+<text x="1210.0" y="473" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">STO + тормоз (контур KSR)</text>
+<rect x="1060" y="560" width="300" height="58" rx="12" fill="#fff1f1" stroke="#d40000" stroke-width="2.2"/>
+<text x="1210.0" y="584" font-size="13" text-anchor="middle" fill="#d40000" font-weight="bold">G3 · АВАРИЯ</text>
+<text x="1210.0" y="603" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">ошибка ПЧ / таймаут / позиция</text>
+<line x1="455.0" y1="144" x2="455.0" y2="176" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="440.8" y="149.0" width="28.4" height="15" fill="#ffffff" opacity="0.85"/>
+<text x="455.0" y="160.0" font-size="9.5" text-anchor="middle" fill="#1a1a1a" font-weight="normal">авто</text>
+<line x1="455.0" y1="234" x2="455.0" y2="276" stroke="#1a1a1a" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="410.0" y="244.0" width="90.0" height="15" fill="#ffffff" opacity="0.85"/>
+<text x="455.0" y="255.0" font-size="9.5" text-anchor="middle" fill="#1a1a1a" font-weight="normal">референс найден</text>
+<line x1="455.0" y1="334" x2="455.0" y2="376" stroke="#0050c8" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="317.6" y="344.0" width="274.79999999999995" height="15" fill="#ffffff" opacity="0.85"/>
+<text x="455.0" y="355.0" font-size="9.5" text-anchor="middle" fill="#0050c8" font-weight="normal">вызов эт.X + выбран Y; ворота закрыты; безоп. OK</text>
+<line x1="455.0" y1="434" x2="455.0" y2="476" stroke="#0050c8" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="373.6" y="444.0" width="162.79999999999998" height="15" fill="#ffffff" opacity="0.85"/>
+<text x="455.0" y="455.0" font-size="9.5" text-anchor="middle" fill="#0050c8" font-weight="normal">прибыл на этаж X (SQXa·SQXb)</text>
+<line x1="455.0" y1="534" x2="455.0" y2="576" stroke="#0050c8" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="370.8" y="544.0" width="168.39999999999998" height="15" fill="#ffffff" opacity="0.85"/>
+<text x="455.0" y="555.0" font-size="9.5" text-anchor="middle" fill="#0050c8" font-weight="normal">паллета на вилах BG0=1; SQ8.1</text>
+<line x1="455.0" y1="634" x2="455.0" y2="676" stroke="#0050c8" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="407.2" y="644.0" width="95.6" height="15" fill="#ffffff" opacity="0.85"/>
+<text x="455.0" y="655.0" font-size="9.5" text-anchor="middle" fill="#0050c8" font-weight="normal">прибыл на этаж Y</text>
+<line x1="330" y1="705.0" x2="285.0" y2="790" stroke="#0a8f3c" stroke-width="1.8" marker-end="url(#ag)"/>
+<rect x="205.4" y="737" width="129.2" height="15" fill="#ffffff" opacity="0.85"/>
+<text x="270" y="748" font-size="9.5" text-anchor="middle" fill="#0a8f3c" font-weight="normal">место свободно (BGy=0)</text>
+<line x1="580" y1="705.0" x2="625.0" y2="790" stroke="#e07000" stroke-width="1.8" marker-end="url(#ao)"/>
+<rect x="571.0" y="737" width="118.0" height="15" fill="#ffffff" opacity="0.85"/>
+<text x="630" y="748" font-size="9.5" text-anchor="middle" fill="#e07000" font-weight="normal">место занято (BGy=1)</text>
+<polyline points="285.0,848 120,848 120,305.0 330,305.0" fill="none" stroke="#0a8f3c" stroke-width="1.8" marker-end="url(#ag)"/>
+<text x="150" y="520" font-size="9.5" text-anchor="middle" fill="#0a8f3c" font-weight="normal">выгружено (BG0=0)</text>
+<text x="150" y="535" font-size="9.5" text-anchor="middle" fill="#0a8f3c" font-weight="normal">→ в ОЖИДАНИЕ</text>
+<polyline points="625.0,848 110,848 110,848 285.0,848" fill="none" stroke="#e07000" stroke-width="1.8" marker-end="url(#ao)"/>
+<text x="110" y="866" font-size="9" text-anchor="middle" fill="#e07000" font-weight="normal">место освободилось → выгрузка</text>
+<polyline points="580,505.0 720,505.0 720,305.0 580,305.0" fill="none" stroke="#888" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<text x="720" y="430" font-size="9" text-anchor="middle" fill="#888" font-weight="normal">нет паллеты (BGx=0) → отмена</text>
+<path d="M1020,250 q-14,0 -14,16 v520 q0,16 14,16" fill="none" stroke="#d40000" stroke-width="1.6"/>
+<text x="1002" y="520" font-size="10" fill="#d40000" text-anchor="middle" transform="rotate(-90 1002,520)" font-weight="bold">из любого рабочего состояния</text>
+<line x1="988" y1="332" x2="1060" y2="332" stroke="#d40000" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+<text x="1024.0" y="326" font-size="9" text-anchor="middle" fill="#d40000" font-weight="normal">ворота открылись (SQn.1=0)</text>
+<line x1="988" y1="462" x2="1060" y2="462" stroke="#d40000" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+<text x="1024.0" y="456" font-size="9" text-anchor="middle" fill="#d40000" font-weight="normal">авар. стоп / контур KSR</text>
+<line x1="988" y1="592" x2="1060" y2="592" stroke="#d40000" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+<text x="1024.0" y="586" font-size="9" text-anchor="middle" fill="#d40000" font-weight="normal">ошибка ПЧ / таймаут</text>
+<line x1="1060" y1="318" x2="580" y2="300" stroke="#0a8f3c" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#ag)"/>
+<text x="970" y="300" font-size="8.5" text-anchor="end" fill="#0a8f3c" font-weight="normal">ворота закрыты + квитирование → возврат</text>
+<line x1="1060" y1="455" x2="580" y2="120" stroke="#0a8f3c" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#ag)"/>
+<text x="1030" y="150" font-size="9" text-anchor="end" fill="#0a8f3c" font-weight="normal">сброс → S0</text>
+<line x1="1060" y1="585" x2="580" y2="130" stroke="#0a8f3c" stroke-width="1.2" stroke-dasharray="3 4" marker-end="url(#ag)"/>
+<rect x="70" y="900" width="760" height="150" rx="6" fill="#fafafa" stroke="#888" stroke-width="1.5"/>
+<text x="84" y="924" font-size="13" text-anchor="start" fill="#1a1a1a" font-weight="bold">Пояснения</text>
+<text x="84" y="946" font-size="9.5" text-anchor="start" fill="#234" font-weight="normal">• Синие состояния — рабочий цикл; зелёное — выгрузка; оранжевое — ожидание освобождения места; красные — обработчики безопасности.</text>
+<text x="84" y="962" font-size="9.5" text-anchor="start" fill="#234" font-weight="normal">• Открытие ворот на любом этаже переводит автомат в блокировку с немедленным СТОП; на всех панелях — индикация этажа с открытыми воротами.</text>
+<text x="84" y="978" font-size="9.5" text-anchor="start" fill="#234" font-weight="normal">• Если место выгрузки занято (BGy=1) — паллета остаётся на вилах (S8), штабелёр стоит на этаже назначения до освобождения места.</text>
+<text x="84" y="994" font-size="9.5" text-anchor="start" fill="#234" font-weight="normal">• Аварийный стоп и контур KSR действуют аппаратно (STO + тормоз) параллельно логике; выход — только через сброс и квитирование.</text>
+<text x="84" y="1010" font-size="9.5" text-anchor="start" fill="#234" font-weight="normal">• Позиционирование — по энкодеру BR1 с точной остановкой по сдвоенным датчикам этажа SQna/SQnb; контроль вил — по SQ8.1…8.3.</text>
+<rect x="870" y="900" width="670" height="150" rx="6" fill="#0f1720" stroke="#0f1720"/>
+<text x="882" y="924" font-size="10" font-family="DejaVu Sans Mono, monospace" fill="#9ef0a0">CASE eState OF</text>
+<text x="882" y="939" font-size="10" font-family="DejaVu Sans Mono, monospace" fill="#9ef0a0">  S2_IDLE:    IF Call AND GatesClosed AND SafeOK THEN eState:=S3; END_IF</text>
+<text x="882" y="954" font-size="10" font-family="DejaVu Sans Mono, monospace" fill="#9ef0a0">  S3_TO_SRC:  IF AtFloor(src) THEN eState:=S4; END_IF</text>
+<text x="882" y="969" font-size="10" font-family="DejaVu Sans Mono, monospace" fill="#9ef0a0">  S4_PICK:    IF PalletOnFork THEN eState:=S5;</text>
+<text x="882" y="984" font-size="10" font-family="DejaVu Sans Mono, monospace" fill="#9ef0a0">              ELSIF NoPallet THEN eState:=S2; END_IF</text>
+<text x="882" y="999" font-size="10" font-family="DejaVu Sans Mono, monospace" fill="#9ef0a0">  S6_CHECK:   IF NOT DestOccupied THEN eState:=S7; ELSE eState:=S8; END_IF</text>
+<text x="882" y="1014" font-size="10" font-family="DejaVu Sans Mono, monospace" fill="#9ef0a0">  S8_WAIT:    IF NOT DestOccupied THEN eState:=S7; END_IF</text>
+<text x="882" y="1029" font-size="10" font-family="DejaVu Sans Mono, monospace" fill="#9ef0a0">END_CASE</text>
+<text x="882" y="1044" font-size="10" font-family="DejaVu Sans Mono, monospace" fill="#9ef0a0">IF AnyGateOpen OR EStop OR Fault THEN eState:=G_HANDLER; END_IF</text>
+</svg>
