@@ -150,6 +150,39 @@ MagSafe / Qi2. Развивает характерную патину — «че
 
 ---
 
+## 📊 Сводная таблица сравнения
+
+Цены — ориентир в долларах США без скидок (на июнь 2026); в РФ/ЕС могут отличаться.
+«Толщина/вес» — относительная оценка (▁ ультратонкий · ▂ тонкий · ▃ средний).
+
+| Чехол | Материал | Толщина | Защита | MagSafe | Цена ≈ |
+|---|---|---|---|---|---|
+| [Pitaka MagEZ 5 Edge](https://www.ipitaka.com/collections/iphone-17-pro-max-cases) | Арамид 600D | ▁ ультратонкий | Средняя (царапины/лёгкие падения) | ✅ + экосистема | $60–80 |
+| [Pitaka MagEZ 5 Summa/Cairn](https://www.ipitaka.com/collections/iphone-17-pro-max-cases) | Арамид + бампер | ▂ тонкий | Средняя–высокая | ✅ + экосистема | $70–100 |
+| [Thinborne Carbon/Aramid](https://thinborne.com/collections/iphone-17-pro-max-carbon-fiber-case) | Арамид/карбон | ▁ ультратонкий (~1 мм) | Низкая–средняя | ✅ | ~$70 |
+| [Carbon Fiber Gear CarboFend](https://carbonfibergear.com/collections/iphone-17) | Настоящий 3K карбон | ▂ тонкий | Средняя | ✅ | $60–80 |
+| [Simply Carbon Fiber CLASSIC](https://www.simplycarbonfiber.com/products/iphone-real-carbon-fiber-case-classic-series) | Настоящий 3K twill | ▂ тонкий | Средняя | ✅ | $90–100 |
+| [Ridge Carbon](https://ridge.com/products/iphone-17-pro-max-case-carbon) | Карбон + TPU-бампер | ▂ тонкий | Высокая (углы) | ✅ | ~$60 |
+| [MonCarbone Ballistic](https://moncarbone.com/collections/iphone-17/products/ballistic-fiber-magnetic-minimalist-iphone-17-pro-pro-max-case-racing-black) | Баллистическое волокно | ▁ ультратонкий | Низкая–средняя | ✅ | $70–90 |
+| [Spigen Rugged Armor MagFit](https://www.spigen.com/collections/iphone-17-pro-max) | TPU | ▃ средний | Высокая | ✅ | ~$22 |
+| [OtterBox Symmetry](https://www.otterbox.com/en-us/iphone-17-pro-max-cases/) | Поликарбонат/TPU | ▃ средний | Высокая (3× MIL) | ✅ | $50–60 |
+| [UNIQ Heldro Air](https://www.uniqliving.com/collections/iphone-17-pro-max) | TPU/поликарбонат | ▂ тонкий | Средняя–высокая (до 4 м) | ✅ | ~$24 |
+| [TORRAS Translucent](https://www.torras.com/collections/iphone-17-pro-max-case) | Полупрозрачный PC/TPU | ▂ тонкий | Высокая (X-SHOCK) | ✅ (38 магнитов) | $30–40 |
+| [Dropguys Ultra Slim Clear](https://www.dropguys.com/blogs/news/best-iphone-17-pro-max-cases) | Прозрачный TPU | ▂ тонкий | Средняя–высокая | ✅ | $25–35 |
+| [Mujjo Full Leather](https://www.mujjo.com/products/full-leather-case-for-iphone-17-pro-max) | Натур. кожа | ▂ тонкий | Средняя | ✅ | ~$65 |
+| [Nomad Traditional Leather](https://nomadgoods.com/collections/iphone-17-pro-max) | Кожа Horween | ▃ средний | Средняя–высокая (бамперы) | ✅ | $65–85 |
+| [Bellroy 3-Card](https://bellroy.com/products/category/iphone-17-pro-max) | Кожа + полимер | ▃ средний | Средняя | ✅ | ~$79 |
+| [Casekoo (кольцо-подставка)](https://www.casekoo.com/collections/iphone-17-pro-max) | PC/TPU | ▃ средний | Средняя–высокая | ✅ + подставка | $20–30 |
+| [Moft Movas](https://www.moft.us/collections/iphone-17-pro-max) | TPU/металл | ▂ тонкий | Средняя | ✅ | ~$50 |
+
+### Ориентир по бюджету
+
+- **До $30 (бюджет):** UNIQ Heldro Air, Spigen Rugged Armor, Casekoo, Dropguys Clear.
+- **$30–60 (средний):** TORRAS, OtterBox Symmetry, Moft Movas, Ridge Carbon.
+- **$60–100 (премиум):** Pitaka MagEZ 5, Mujjo, Nomad, Bellroy, Carbon Fiber Gear, Simply Carbon Fiber.
+
+---
+
 ## Быстрый выбор по сценарию
 
 | Что важнее всего | Рекомендация |
