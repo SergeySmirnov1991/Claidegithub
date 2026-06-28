@@ -78,6 +78,26 @@
 > Совет: «настоящий карбон/арамид» ≠ «карбоновый принт». Принт — это обычный пластик
 > с рисунком. Ищите формулировки **real / genuine 3K carbon** или **aramid fiber 600D**.
 
+### Бамперы и скелетоны (максимально «не сплошные»)
+
+Самый открытый формат: защищают только рамку/края и углы, задняя стенка открыта или
+почти прозрачна. Минимум объёма и веса, телефон выглядит «голым».
+
+- [**Arc Pulse**](https://arc.cc/products/arc-pulse-for-iphone-17-pro-max) — алюминиевый
+  бампер из двух частей (верх/низ) на алюминии 7075-T6: закрывает все 4 угла и рамку
+  камеры, спина полностью открыта. Защита от падений до ~3 м, премиальный вид.
+- [**RhinoShield Mod NX**](https://rhinoshield.io/products/mod-nx/buy?device=iphone-17-pro-max) —
+  модульный: без задней панели превращается в бампер-скелетон (открытая спина),
+  военный стандарт по падениям (~3,3 м), сменные рамки/кнопки. MagSafe — через отдельный модуль.
+- [**RhinoShield CrashGuard NX**](https://rhinoshield.io/products/mod-nx/buy?device=iphone-17-pro-max) —
+  классический ударопрочный бампер (только рамка), 11 ft (3,5 м) защиты, очень тонкий.
+- [**dbrand Ghost 2.0**](https://dbrand.com/shop/ghost/iphone-17-pro-max-clear-cases) —
+  ультратонкая прозрачная «скелетон»-рамка с грипом, 18 магнитов, пожизненная гарантия
+  от пожелтения, нативная кнопка Camera Control.
+
+> ⚠️ У чистых бамперов и скелетонов **открытая спина не защищена** от царапин и сколов —
+> это компромисс ради минимализма. У многих алюминиевых бамперов нет встроенного MagSafe.
+
 ---
 
 ## 🏆 Лучший баланс защиты и стиля
@@ -164,6 +184,10 @@ MagSafe / Qi2. Развивает характерную патину — «че
 | [Simply Carbon Fiber CLASSIC](https://www.simplycarbonfiber.com/products/iphone-real-carbon-fiber-case-classic-series) | Настоящий 3K twill | ▂ тонкий | Средняя | ✅ | $90–100 |
 | [Ridge Carbon](https://ridge.com/products/iphone-17-pro-max-case-carbon) | Карбон + TPU-бампер | ▂ тонкий | Высокая (углы) | ✅ | ~$60 |
 | [MonCarbone Ballistic](https://moncarbone.com/collections/iphone-17/products/ballistic-fiber-magnetic-minimalist-iphone-17-pro-pro-max-case-racing-black) | Баллистическое волокно | ▁ ультратонкий | Низкая–средняя | ✅ | $70–90 |
+| [Arc Pulse (бампер)](https://arc.cc/products/arc-pulse-for-iphone-17-pro-max) | Алюминий 7075 | ▁ бампер (спина открыта) | Края/углы (до ~3 м) | ❌ (нет) | $30–40 |
+| [RhinoShield Mod NX (скелетон)](https://rhinoshield.io/products/mod-nx/buy?device=iphone-17-pro-max) | TPU + поликарбонат | ▂ бампер/скелетон | Высокая по краям (~3,3 м) | ➖ (модуль) | ~$32 |
+| [RhinoShield CrashGuard NX (бампер)](https://rhinoshield.io/products/mod-nx/buy?device=iphone-17-pro-max) | TPU + поликарбонат | ▁ тонкий бампер | Высокая по краям (3,5 м) | ➖ (модуль) | ~$25 |
+| [dbrand Ghost 2.0 (скелетон)](https://dbrand.com/shop/ghost/iphone-17-pro-max-clear-cases) | Прозрачный полимер | ▁ ультратонкий | Низкая–средняя | ✅ (18 магнитов) | ~$50 |
 | [Spigen Rugged Armor MagFit](https://www.spigen.com/collections/iphone-17-pro-max) | TPU | ▃ средний | Высокая | ✅ | ~$22 |
 | [OtterBox Symmetry](https://www.otterbox.com/en-us/iphone-17-pro-max-cases/) | Поликарбонат/TPU | ▃ средний | Высокая (3× MIL) | ✅ | $50–60 |
 | [UNIQ Heldro Air](https://www.uniqliving.com/collections/iphone-17-pro-max) | TPU/поликарбонат | ▂ тонкий | Средняя–высокая (до 4 м) | ✅ | ~$24 |
