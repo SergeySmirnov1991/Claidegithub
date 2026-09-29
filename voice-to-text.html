@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Голос в текст</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  /* Layout: one centered column — status + controls on top, a large transcript sheet below */
+  :root {
+    --bg: #eef1f4;
+    --surface: #ffffff;
+    --fg: #17202a;
+    --muted: #5b6875;
+    --line: #d5dce3;
+    --accent: #0f6e8c;
+    --rec: #c62f3a;
+    --interim: #8a97a4;
+    --font-ui: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #10161c; --surface: #18212a; --fg: #e6ecf1; --muted: #93a1ad;
+      --line: #2a3642; --accent: #4fb3d3; --rec: #ff6b72; --interim: #6f7e8b;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #10161c; --surface: #18212a; --fg: #e6ecf1; --muted: #93a1ad;
+    --line: #2a3642; --accent: #4fb3d3; --rec: #ff6b72; --interim: #6f7e8b;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.55 var(--font-ui);
+    padding-inline: 16px;
+    padding-block: max(24px, env(safe-area-inset-top, 0px)) max(24px, env(safe-area-inset-bottom, 0px));
+  }
+  main { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+  header { display: flex; flex-direction: column; gap: 4px; }
+  h1 { margin: 0; font-size: 1.75rem; font-weight: 800; letter-spacing: -0.01em; text-wrap: balance; }
+  .sub { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+  .controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  button, select {
+    font: 600 0.95rem var(--font-ui); border-radius: 10px; border: 1px solid var(--line);
+    background: var(--surface); color: var(--fg); padding: 10px 16px; cursor: pointer;
+  }
+  button:focus-visible, select:focus-visible, #transcript:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  #mic {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--accent); border-color: var(--accent); color: #fff; padding: 12px 22px; font-size: 1rem;
+  }
+  #mic.on { background: var(--rec); border-color: var(--rec); }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: currentColor; }
+  #mic.on .dot { animation: pulse 1.1s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: 0.25; } }
+  @media (prefers-reduced-motion: reduce) { #mic.on .dot { animation: none; } }
+  .spacer { flex: 1; }
+
+  .status {
+    font: 500 0.8rem var(--font-mono); color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase;
+    display: flex; flex-wrap: wrap; gap: 16px; font-variant-numeric: tabular-nums;
+  }
+  .status .live { color: var(--rec); }
+
+  .sheet {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    padding: 20px; min-height: 45vh; display: flex; flex-direction: column; gap: 6px;
+  }
+  #transcript {
+    flex: 1; min-height: 38vh; width: 100%; resize: vertical; border: 0; background: transparent;
+    color: var(--fg); font: 1.1rem/1.65 var(--font-ui); padding: 0;
+  }
+  #transcript:focus { outline: none; }
+  #interim { color: var(--interim); font-style: italic; min-height: 1.6em; }
+  .error {
+    border: 1px solid var(--rec); color: var(--rec); border-radius: 10px; padding: 12px 14px; font-size: 0.95rem;
+  }
+  .hint { color: var(--muted); font-size: 0.85rem; margin: 0; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Голос в текст</h1>
+    <p class="sub">Нажмите «Начать запись», разрешите доступ к микрофону и говорите. Текст можно править прямо в поле.</p>
+  </header>
+
+  <div class="controls">
+    <button id="mic" type="button"><span class="dot"></span><span id="micLabel">Начать запись</span></button>
+    <select id="lang" aria-label="Язык распознавания">
+      <option value="ru-RU">Русский</option>
+      <option value="uk-UA">Українська</option>
+      <option value="en-US">English (US)</option>
+      <option value="de-DE">Deutsch</option>
+    </select>
+    <span class="spacer"></span>
+    <button id="copy" type="button">Копировать</button>
+    <button id="save" type="button">Скачать .txt</button>
+    <button id="clear" type="button">Очистить</button>
+  </div>
+
+  <div class="status" aria-live="polite">
+    <span id="state">Готово</span>
+    <span id="words">0 слов</span>
+    <span id="timer">00:00</span>
+  </div>
+
+  <div id="error" class="error" hidden></div>
+
+  <section class="sheet">
+    <textarea id="transcript" placeholder="Здесь появится распознанный текст…" spellcheck="true"></textarea>
+    <div id="interim" aria-live="polite"></div>
+  </section>
+
+  <p class="hint">Работает в Chrome, Edge и Safari. Распознавание выполняет браузер; текст сохраняется только на этом устройстве.</p>
+</main>
+
+<script>
+(function () {
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  var $ = function (id) { return document.getElementById(id); };
+  var mic = $("mic"), micLabel = $("micLabel"), lang = $("lang");
+  var box = $("transcript"), interim = $("interim"), errBox = $("error");
+  var stateEl = $("state"), wordsEl = $("words"), timerEl = $("timer");
+  var STORE = "voice-to-text:draft";
+
+  var rec = null, listening = false, wantOn = false, started = 0, tick = null;
+
+  try { box.value = localStorage.getItem(STORE) || ""; } catch (e) {}
+  try { var l = localStorage.getItem(STORE + ":lang"); if (l) lang.value = l; } catch (e) {}
+  updateWords();
+
+  function showError(msg) { errBox.textContent = msg; errBox.hidden = !msg; }
+  function persist() { try { localStorage.setItem(STORE, box.value); } catch (e) {} }
+  function updateWords() {
+    var n = (box.value.trim().match(/\S+/g) || []).length;
+    wordsEl.textContent = n + " " + plural(n, "слово", "слова", "слов");
+  }
+  function plural(n, one, few, many) {
+    var m10 = n % 10, m100 = n % 100;
+    if (m10 === 1 && m100 !== 11) return one;
+    if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return few;
+    return many;
+  }
+  function fmt(ms) {
+    var s = Math.floor(ms / 1000);
+    return String(Math.floor(s / 60)).padStart(2, "0") + ":" + String(s % 60).padStart(2, "0");
+  }
+  function setUI(on) {
+    mic.classList.toggle("on", on);
+    micLabel.textContent = on ? "Остановить" : "Начать запись";
+    stateEl.textContent = on ? "● Идёт запись" : "Готово";
+    stateEl.classList.toggle("live", on);
+    lang.disabled = on;
+  }
+  function append(text) {
+    text = text.trim();
+    if (!text) return;
+    var cur = box.value;
+    var sep = cur && !/\s$/.test(cur) ? " " : "";
+    if (!cur || /[.!?…]\s*$/.test(cur)) text = text.charAt(0).toUpperCase() + text.slice(1);
+    box.value = cur + sep + text;
+    box.scrollTop = box.scrollHeight;
+    persist(); updateWords();
+  }
+
+  if (!SR) {
+    mic.disabled = true;
+    showError("Этот браузер не поддерживает распознавание речи. Откройте страницу в Google Chrome или Microsoft Edge.");
+  }
+
+  function start() {
+    showError("");
+    rec = new SR();
+    rec.lang = lang.value;
+    rec.continuous = true;
+    rec.interimResults = true;
+    rec.onresult = function (ev) {
+      var tmp = "";
+      for (var i = ev.resultIndex; i < ev.results.length; i++) {
+        var r = ev.results[i];
+        if (r.isFinal) append(r[0].transcript); else tmp += r[0].transcript;
+      }
+      interim.textContent = tmp;
+    };
+    rec.onerror = function (ev) {
+      var map = {
+        "not-allowed": "Доступ к микрофону запрещён. Разрешите его в настройках сайта (значок замка в адресной строке).",
+        "service-not-allowed": "Доступ к микрофону запрещён. Откройте файл через Chrome/Edge и разрешите микрофон.",
+        "audio-capture": "Микрофон не найден. Проверьте, что он подключён и выбран в системе.",
+        "network": "Нет соединения с сервисом распознавания. Проверьте интернет."
+      };
+      if (ev.error === "no-speech" || ev.error === "aborted") return;
+      showError(map[ev.error] || ("Ошибка распознавания: " + ev.error));
+      if (ev.error === "not-allowed" || ev.error === "service-not-allowed" || ev.error === "audio-capture") wantOn = false;
+    };
+    rec.onend = function () {
+      interim.textContent = "";
+      // Chrome stops after pauses; restart while the user still wants to record.
+      if (wantOn) { try { rec.start(); return; } catch (e) {} }
+      stop();
+    };
+    try { rec.start(); } catch (e) { showError("Не удалось запустить запись: " + e.message); return; }
+    wantOn = true; listening = true; started = Date.now();
+    setUI(true);
+    tick = setInterval(function () { timerEl.textContent = fmt(Date.now() - started); }, 500);
+  }
+  function stop() {
+    wantOn = false;
+    if (rec && listening) { try { rec.stop(); } catch (e) {} }
+    listening = false;
+    clearInterval(tick);
+    setUI(false);
+  }
+
+  mic.addEventListener("click", function () { listening ? stop() : start(); });
+  lang.addEventListener("change", function () { try { localStorage.setItem(STORE + ":lang", lang.value); } catch (e) {} });
+  box.addEventListener("input", function () { persist(); updateWords(); });
+
+  $("copy").addEventListener("click", function () {
+    var btn = this;
+    function done() { btn.textContent = "Скопировано"; setTimeout(function () { btn.textContent = "Копировать"; }, 1500); }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(box.value).then(done, function () { box.select(); document.execCommand("copy"); done(); });
+    } else { box.select(); document.execCommand("copy"); done(); }
+  });
+  $("save").addEventListener("click", function () {
+    var blob = new Blob([box.value], { type: "text/plain;charset=utf-8" });
+    var a = document.createElement("a");
+    var d = new Date(), p = function (n) { return String(n).padStart(2, "0"); };
+    a.href = URL.createObjectURL(blob);
+    a.download = "zapis_" + d.getFullYear() + p(d.getMonth() + 1) + p(d.getDate()) + "_" + p(d.getHours()) + p(d.getMinutes()) + ".txt";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  });
+  $("clear").addEventListener("click", function () {
+    box.value = ""; interim.textContent = ""; persist(); updateWords(); timerEl.textContent = "00:00";
+  });
+})();
+</script>
+</body>
+</html>
